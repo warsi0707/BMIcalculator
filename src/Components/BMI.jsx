@@ -92,8 +92,8 @@ export default function BMICalc() {
               <h1 className="text-lg md:text-3xl">{bmiValue}</h1>
             </div>
           </div>
-          <div className="grid grid-cols-2 justify-items-center   md:h-36 rounded-lg md:w-full md:bg-black  md:flex md:space-x-5 md:justify-center md:p-2">
-            <div className="bg-red-600 mb-5 rounded-md h-20 w-32 md:h-full md:w-40 md:text-xl text-white">
+          <div className="grid grid-cols-2  justify-items-center md:h-36 rounded-lg md:w-full md:bg-black  md:flex md:space-x-5 md:justify-center md:p-2">
+            <div className="bg-red-600 mb-5 rounded-md  h-20 w-32 md:h-full md:w-40 md:text-xl text-white">
               <p className="flex justify-center pt-1 md:pt-2">
                 <FaLessThan />{" "}
               </p>
@@ -117,6 +117,32 @@ export default function BMICalc() {
               <p>30</p>
               <p>Obesity</p>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="info mx-5  md:mx-20 my-5 text-lg p-5 md:flex gap-10">
+        <div className="leftSide  w-full h-full p-5 ">
+          <h1><strong>A Body Mass Index (BMI) </strong>calculator is a tool designed to help individuals estimate whether they have a healthy body weight for their height. BMI is calculated using the following formula:</h1>
+          <h1 className="text-xl font-bold">BMI= (height in meters)*2 / weight in kilograms</h1>
+          <div>
+            <h1>This measurement helps categorize people into various weight categories:</h1>
+            <li>Underweight: BMI less than 18.5</li>
+            <li>Normal weight: BMI between 18.5 and 24.9</li>
+            <li>Overweight: BMI between 25 and 29.9</li>
+            <li>Obesity: BMI of 30 or greater</li>
+          </div>
+
+        </div>
+        <div className="rightSide my-12 md:my-0  w-full h-full p-5">
+          <h1 className="text-xl font-bold">How It Works:</h1>
+          <p><p className="text-xl font-bold">1. Input:</p> Users enter their weight (in kilograms) and height (in centimeters or meters).</p>
+          <p><p className="text-xl font-bold">2. Calculation:</p> The tool converts height to meters (if necessary), applies the BMI formula, and calculates the BMI.</p>
+          <p><p className="text-xl font-bold">3. Output:</p> Based on the result, users receive feedback indicating which category they fall into, helping them understand their health better.</p>
+          <div className="mt-5">
+            <h1 className="text-xl font-bold">limitations:</h1>
+            <p>While BMI can give an indication of healthy or unhealthy weight, it doesn't consider factors such as muscle mass, bone density, or body composition. Therefore, athletes or people with high muscle mass might have a high BMI but still be healthy.</p>
+            <p>This simple tool can be helpful in getting a general sense of weight status, but it’s always a good idea to consult healthcare professionals for a more comprehensive assessment.</p>
           </div>
         </div>
       </div>
