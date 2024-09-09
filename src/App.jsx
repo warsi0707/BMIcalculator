@@ -1,6 +1,6 @@
 
 import Navbar from "./Components/navbar"
-import BMICalc from "./BMI"
+import BMICalc from "./Components/BMI"
 function App() {
 
 
